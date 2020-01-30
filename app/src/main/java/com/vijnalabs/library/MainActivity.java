@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Player player = new Player();
         player.shortToast(this, "selvin");
         Bitmap bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.exit);
+       player.getTextFromImage(this, bitmap);
         //player.getTextFromImage();
     }
 
