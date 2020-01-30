@@ -20,7 +20,7 @@ public class Player extends AppCompatActivity {
         Toast.makeText(context, name, Toast.LENGTH_LONG).show();
     }
 
-    public String getTextFromImage(Bitmap bitmap) {
+    public String getTextFromImage(Context context, Bitmap bitmap) {
 
         StringBuilder sb = null;
 

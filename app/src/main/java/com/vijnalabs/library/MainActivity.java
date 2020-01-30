@@ -34,11 +34,15 @@ public class MainActivity extends AppCompatActivity {
 
         Player player = new Player();
         player.shortToast(this, "selvin");
-        Bitmap bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.exit);
-       player.getTextFromImage(this, bitmap);
+
         //player.getTextFromImage();
     }
-
+    public void getTextFromImage(View v) {
+        Bitmap bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.exit);
+        Player player = new Player();
+        String ocrValue = player.getTextFromImage(getApplicationContext(), bitmap);
+        Toast.makeText(this, ".." + ocrValue, Toast.LENGTH_LONG).show();
+    }
 //    public void getTextFromImage(View v) {
 //
 //        Bitmap bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.exit);
