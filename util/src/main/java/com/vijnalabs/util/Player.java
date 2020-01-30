@@ -24,7 +24,7 @@ public class Player extends AppCompatActivity {
 
         StringBuilder sb = null;
 
-        TextRecognizer textRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
+        TextRecognizer textRecognizer = new TextRecognizer.Builder(context).build();
 
         if (!textRecognizer.isOperational()) {
 
